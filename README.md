@@ -23,16 +23,16 @@ Event yapısı; evtime, evtype, eventity, paket işaretçisi, önceki ve sonraki
 
 **2.2	Değişkenler ve Fonksiyonlar** <br>
 A_output: Üst katmanlardan bir mesaj alır. Sadece iki durumda olabilir; <br>
-1)	A_output bir cevap gönderiyor. <br>
-2)	A_output bir cevap bekliyor. <br>
+•	A_output bir cevap gönderiyor. <br>
+•	A_output bir cevap bekliyor. <br>
 A_STATE: A_output’un durumunu belirtir. Bir cevap gönderiliyorsa, paketi oluşturur ve daha sonra bu paketi, yeniden iletme için kullanılan “prev_packet” değişkenine kaydeder. <br> 
 A_input: Aldığı paketin beklediğimiz ACK’ya sahip olup olmadığını, zamanlayıcı zaman aşımına uğramış mı kontrol eder. Aynı zamanda paketin sağlama toplamını da kontrol eder. <br> 
 A_timerinterrupt: A'nın zamanlayıcı süresi dolduğunda ve zamanlayıcıyı yeniden başlattığında prev_packet'i yani bir önceki paketi gönderir. <br>
 A_init: A_STATE, ACK ve SEQ değerini 0 olarak ayarlayan fonksiyondur. <br>
 
 B_output: Üst katmanlardan bir mesaj alır. Sadece iki durumda olabilir; <br>
-1)	B_output bir cevap gönderiyor. <br>
-2)	B_output bir cevap bekliyor. <br>
+•	B_output bir cevap gönderiyor. <br>
+•	B_output bir cevap bekliyor. <br>
 B_STATE: B_output’un durumunu belirtir. Bir cevap gönderiliyorsa, paketi oluşturur ve daha sonra bu paketi, yeniden iletme için kullanılan “prev_packet” değişkenine kaydeder. <br> 
 B_input: Aldığı paketin beklenen ACK’ya sahip olup olmadığını ve zamanlayıcının zaman aşımına uğramasını kontrol eder. Ayrıca paketin sağlama toplamını da kontrol eder. <br>
 B_timerinterrupt: B’nin zamanlayıcı süresi dolduğunda ve zamanlayıcıyı yeniden başlattığında prev_packet'i yani bir önceki paketi gönderir. <br>
