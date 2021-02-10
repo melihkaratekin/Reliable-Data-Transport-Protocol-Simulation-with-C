@@ -6,7 +6,7 @@ Bu projede amaç güvenilir bir veri aktarma protokolü uygulamak için Transpor
 
 ## 2.	PROJENİN İÇERİĞİ
 
-## 2.1	Mesaj, Paket ve Event Yapıları
+** 2.1	Mesaj, Paket ve Event Yapıları **
 Message(msg) yapısı; 20 elemandan oluşan bir char dizisidir. Program boyunca gönderilen mesajlar bu türden olacaktır.
 
 Packet(pkt) yapısı; sequence number, ack number, checksum ve payload’dan oluşur. Program boyunca gönderilen paketler bu türden olacaktır.
